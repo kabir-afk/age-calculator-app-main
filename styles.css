@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Font";
+  src: url(assets/fonts/Poppins-Bold.ttf) format("truetype"), url(assets/fonts/Poppins-BoldItalic.ttf) format("truetype"), url(assets/fonts/Poppins-ExtraBold.ttf) format("truetype"), url(assets/fonts/Poppins-ExtraBoldItalic.ttf) format("truetype"), url(assets/fonts/Poppins-Italic.ttf) format("truetype"), url(assets/fonts/Poppins-Regular.ttf) format("truetype");
+}
+*,
+*::before,
+*::after {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+  font-family: "Font", sans-serif;
+}
+
+.hero-container {
+  width: 60%;
+  margin: 10% auto;
+  padding: 3em;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 30px 30px 30% 30px;
+}
+
+.input {
+  width: 67.5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input div p {
+  color: hsl(0, 1%, 44%);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.input div input {
+  border: 2px solid hsl(0, 0%, 86%);
+  border-radius: 5px;
+  width: 85%;
+  font-size: 1.5rem;
+  padding: 0.4em 0.6em;
+  cursor: pointer;
+  font-family: inherit;
+}
+.input div input:hover, .input div input:focus {
+  border: 2px solid hsl(259, 100%, 65%);
+}
+.input div input::-webkit-inner-spin-button, .input div input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.seperator {
+  margin-top: 2em;
+  height: -moz-max-content;
+  height: max-content;
+  display: flex;
+  justify-content: none;
+  align-items: center;
+}
+.seperator hr {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 3px;
+  background-color: hsl(0, 0%, 86%);
+}
+.seperator button {
+  border: none;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  border-radius: 100px;
+  background-color: hsl(259, 100%, 65%);
+}
+.seperator button:hover {
+  cursor: pointer;
+  background-color: hsl(0, 0%, 8%);
+}
+
+.output {
+  font-size: 5rem;
+  font-style: italic;
+  font-weight: 800;
+}
+.output span {
+  color: hsl(259, 100%, 65%);
+}/*# sourceMappingURL=styles.css.map */
