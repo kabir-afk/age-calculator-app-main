@@ -28,33 +28,38 @@
   </head>
   <body>
     <main>
-      <div class="hero-container">
-        <div class="input">
-          <div>
-            <p>Day</p>
-            <input type="number" name="Day" id="Day" placeholder="DD" />
+      <form action="#">
+        <div class="hero-container">
+          <div class="input">
+            <div>
+              <p>Day</p>
+              <input type="number" name="Day" id="Day" placeholder="DD" />
+              <p class="error-msg"></p>
+            </div>
+            <div>
+              <p>Month</p>
+              <input type="number" name="Month" id="Month" placeholder="MM" />
+              <p class="error-msg"></p>
+            </div>
+            <div>
+              <p>Year</p>
+              <input type="number" name="Year" id="Year" placeholder="YYYY" />
+              <p class="error-msg"></p>
+            </div>
           </div>
-          <div>
-            <p>Month</p>
-            <input type="number" name="Month" id="Month" placeholder="MM" />
+          <div class="seperator">
+            <hr>
+            <button type="submit">
+              <img src="assets/images/icon-arrow.svg" alt="icon-arrow" />
+            </button>
           </div>
-          <div>
-            <p>Year</p>
-            <input type="number" name="Year" id="Year" placeholder="YYYY" />
+          <div class="output">
+            <p><span>--</span> years</p>
+            <p><span>--</span> months</p>
+            <p><span>--</span> days</p>
           </div>
         </div>
-        <div class="seperator">
-          <hr>
-          <button>
-            <img src="assets/images/icon-arrow.svg" alt="icon-arrow" />
-          </button>
-        </div>
-        <div class="output">
-          <p><span>--</span> years</p>
-          <p><span>--</span> months</p>
-          <p><span>--</span> days</p>
-        </div>
-      </div>
+      </form>
     </main>
 
     <footer>
