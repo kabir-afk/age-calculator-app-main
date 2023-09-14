@@ -78,7 +78,8 @@ body {
         }
 
         input {
-            border: 2px solid $Light-grey;
+            border: none;
+            outline: 2px solid $Light-grey;
             border-radius: 5px;
             width: 85%;
             font-size: 1.5rem;
@@ -88,7 +89,7 @@ body {
 
             &:hover,
             &:focus {
-                border: 2px solid $Purple;
+                outline: 2px solid $Purple;
             }
 
             &::-webkit-inner-spin-button,
@@ -96,12 +97,19 @@ body {
                 display: none;
             }
         }
+        .error-msg{
+            font-weight: 100;
+            font-size: 0.7rem;
+            font-style: italic;
+            color: $Light-red;
+            visibility: hidden;
+        }
     }
 }
 
 .seperator {
     // border: 2px solid red;
-    margin-top: 2em;
+    margin-top: 1em;
     height: max-content;
     @include flex(none, center);
 

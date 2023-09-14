@@ -40,7 +40,8 @@ body {
   letter-spacing: 1px;
 }
 .input div input {
-  border: 2px solid hsl(0, 0%, 86%);
+  border: none;
+  outline: 2px solid hsl(0, 0%, 86%);
   border-radius: 5px;
   width: 85%;
   font-size: 1.5rem;
@@ -49,14 +50,21 @@ body {
   font-family: inherit;
 }
 .input div input:hover, .input div input:focus {
-  border: 2px solid hsl(259, 100%, 65%);
+  outline: 2px solid hsl(259, 100%, 65%);
 }
 .input div input::-webkit-inner-spin-button, .input div input::-webkit-outer-spin-button {
   display: none;
 }
+.input div .error-msg {
+  font-weight: 100;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+  visibility: hidden;
+}
 
 .seperator {
-  margin-top: 2em;
+  margin-top: 1em;
   height: -moz-max-content;
   height: max-content;
   display: flex;
