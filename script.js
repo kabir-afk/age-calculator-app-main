@@ -18,26 +18,26 @@ function isValidDate(year, month, day) {
     date.getDate() !== day
   ) {
     console.log("not vaLid date");
+    return;
   } else {
     console.log("vaLid date");
   }
 }
 function getDifference(year, month, day) {
-  let todaysDate = new Date();
-  let birthDate = new Date(year, month, day);
+  const currentDate = new Date();
+  let birthdate = new Date(year, month, day);
 
-  let yearDiff = todaysDate.getFullYear() - year;
-  let monthDiff = todaysDate.getMonth() + 1 - month;
-  let daysDiff = todaysDate.getDate() - day;
+  const diff = currentDate - birthdate;
+  const ageInYears = Math.floor(diff / (365.25 * 24 * 60 * 60 * 1000));
+  const ageInMonths = Math.floor(diff / (30.44 * 24 * 60 * 60 * 1000));
+  const ageInDays = Math.floor(diff / (24 * 60 * 60 * 1000));
+
+  const monthsRemainder = ageInMonths - ageInYears * 12;
+  const daysRemainder = ageInDays - ageInMonths * 30.44;
   
-  if (monthDiff < 0) {
-    yearDiff--;
-    monthDiff = 12 + monthDiff;
-  }
-
-  yearOutput.innerText = yearDiff;
-  monthOutput.innerText = monthDiff;
-  dayOutput.innerText = daysDiff;
+  yearOutput.innerText = ageInYears;
+  monthOutput.innerText = parseInt(monthsRemainder);
+  dayOutput.innerText = parseInt(daysRemainder);
 }
 form.addEventListener("submit", () => {
   event.preventDefault();
@@ -48,9 +48,8 @@ form.addEventListener("submit", () => {
       parseInt(day.value)
     )
   ) {
-    getDifference(year.value, month.value, day.value);
+    getDifference(year.value, month.value - 1, day.value);
+  } else {
+    console.error("Invalid date");
   }
-  //   else{
-
-  //   }
 });
