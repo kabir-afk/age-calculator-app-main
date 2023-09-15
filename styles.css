@@ -23,6 +23,12 @@ body {
   background-color: hsl(0, 0%, 100%);
   border-radius: 30px 30px 30% 30px;
 }
+@media screen and (max-width: 650px) {
+  .hero-container {
+    width: 90%;
+    margin-top: 20%;
+  }
+}
 
 .input {
   width: 67.5%;
@@ -30,11 +36,21 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+@media screen and (max-width: 883px) {
+  .input {
+    width: 100%;
+  }
+}
 .input div p {
   color: hsl(0, 1%, 44%);
   text-transform: uppercase;
   letter-spacing: 1px;
   padding-bottom: 0.5em;
+}
+@media screen and (max-width: 650px) {
+  .input div p {
+    font-size: 13px;
+  }
 }
 .input div input {
   border: none;
@@ -52,13 +68,30 @@ body {
 .input div input::-webkit-inner-spin-button, .input div input::-webkit-outer-spin-button {
   display: none;
 }
+@media screen and (max-width: 1220px) {
+  .input div input {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .input div input {
+    font-size: 1.25rem;
+    padding: 0.4em;
+  }
+}
 .input div .error-msg {
   margin-top: 0.5em;
   height: 0.75rem;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 0.75rem;
   font-style: italic;
   color: hsl(0, 100%, 67%);
+}
+@media screen and (max-width: 650px) {
+  .input div .error-msg {
+    height: 0.65rem;
+    font-size: 0.65rem;
+  }
 }
 
 .seperator {
@@ -69,12 +102,26 @@ body {
   justify-content: none;
   align-items: center;
 }
+@media screen and (max-width: 883px) {
+  .seperator {
+    display: block;
+    position: relative;
+    margin-top: 1.35em;
+  }
+}
 .seperator hr {
   border: 0;
   outline: 0;
   width: 100%;
   height: 3px;
   background-color: hsl(0, 0%, 86%);
+}
+@media screen and (max-width: 883px) {
+  .seperator hr {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 .seperator button {
   border: none;
@@ -90,6 +137,18 @@ body {
   cursor: pointer;
   background-color: hsl(0, 0%, 8%);
 }
+@media screen and (max-width: 883px) {
+  .seperator button {
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (max-width: 650px) {
+  .seperator button {
+    height: 63px;
+  }
+}
 
 .output {
   font-size: 5rem;
@@ -98,4 +157,9 @@ body {
 }
 .output span {
   color: hsl(259, 100%, 65%);
+}
+@media screen and (max-width: 883px) {
+  .output {
+    font-size: 2.75rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

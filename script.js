@@ -60,7 +60,8 @@ function isValidDate(year, month, day) {
     date.getFullYear() !== year ||
     date.getMonth() !== month ||
     date.getDate() !== day ||
-    date > todaysDate
+    date > todaysDate ||
+    date.getFullYear() < 0
   ) {
     return false;
   } else {
@@ -119,13 +120,22 @@ form.addEventListener("submit", (event) => {
       errorMsg[0].innerText = "";
     }
   } else {
-    let date = new Date(inputElements[2].value,inputElements[1].value,inputElements[0].value)
+    let date = new Date(
+      inputElements[2].value,
+      inputElements[1].value,
+      inputElements[0].value
+    );
     for (let i = 0; i < 3; i++) {
       inputElements[i].style.outlineColor = "hsl(0, 100%, 67%)";
       inputHeadings[i].style.color = "hsl(0, 100%, 67%)";
       if (date > todaysDate) {
         errorMsg[0].innerText = "Must be in the past";
-      } else {
+      } else if (inputElements[i].value == "") {
+        errorMsg[i].innerText = "This field is required";
+      }else if (inputElements[2].value < 0) {
+        errorMsg[0].innerText = "What are you? Jesus???";
+      }
+       else {
         errorMsg[0].innerText = "Must be a valid date";
       }
     }
