@@ -6,15 +6,11 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ## Overview
@@ -34,32 +30,25 @@ Users should be able to:
 - See hover and focus states for all interactive elements on the page
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
 
-### Screenshot
-
-
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://kabir-afk.github.io/age-calculator-app-main/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
 - Flexbox
-- CSS Grid
+- Javascript
+- SCSS
 - Desktop-first workflow
-- [Styled Components](https://styled-components.com/) - For styles
-
 
 ### What I learned
+- working with dates
+  - fact that you can compare dates , subtract dates and JS engine automtically generates new date when a wrong date is entered
+- I guess I wrote efficient SCSS in this project so I guess that  
 
-### Continued development
-
-### Useful resources
 ## Author
 
 - Frontend Mentor - [@solitary_coder](https://www.frontendmentor.io/profile/solitary_coder)
-
-## Acknowledgments
