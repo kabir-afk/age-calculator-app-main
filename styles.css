@@ -1,7 +1,3 @@
-@font-face {
-  font-family: "Font";
-  src: url(assets/fonts/Poppins-Bold.ttf) format("truetype"), url(assets/fonts/Poppins-BoldItalic.ttf) format("truetype"), url(assets/fonts/Poppins-ExtraBold.ttf) format("truetype"), url(assets/fonts/Poppins-ExtraBoldItalic.ttf) format("truetype"), url(assets/fonts/Poppins-Italic.ttf) format("truetype"), url(assets/fonts/Poppins-Regular.ttf) format("truetype");
-}
 *,
 *::before,
 *::after {
@@ -17,7 +13,7 @@ img {
 body {
   height: 100vh;
   background-color: hsl(0, 0%, 94%);
-  font-family: "Font", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-container {
@@ -38,13 +34,14 @@ body {
   color: hsl(0, 1%, 44%);
   text-transform: uppercase;
   letter-spacing: 1px;
+  padding-bottom: 0.5em;
 }
 .input div input {
   border: none;
   outline: 2px solid hsl(0, 0%, 86%);
   border-radius: 5px;
   width: 85%;
-  font-size: 1.5rem;
+  font-size: 32px;
   padding: 0.4em 0.6em;
   cursor: pointer;
   font-family: inherit;
@@ -56,11 +53,12 @@ body {
   display: none;
 }
 .input div .error-msg {
+  margin-top: 0.5em;
+  height: 0.75rem;
   font-weight: 100;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   font-style: italic;
   color: hsl(0, 100%, 67%);
-  visibility: hidden;
 }
 
 .seperator {

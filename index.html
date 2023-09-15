@@ -11,6 +11,12 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Age calculator app</title>
@@ -34,21 +40,21 @@
             <div>
               <p class="input-headings">Day</p>
               <input type="number" name="Day" id="Day" placeholder="DD" />
-              <div class="error-msg">Must be a valid day</div>
+              <div class="error-msg"></div>
             </div>
             <div>
               <p class="input-headings">Month</p>
-              <input type="number" name="Month" id="Month" placeholder="MM"/>
-              <div class="error-msg">Must be a valid month</div>
+              <input type="number" name="Month" id="Month" placeholder="MM" />
+              <div class="error-msg"></div>
             </div>
             <div>
               <p class="input-headings">Year</p>
               <input type="number" name="Year" id="Year" placeholder="YYYY" />
-              <div class="error-msg">Must be in the past</div>
+              <div class="error-msg"></div>
             </div>
           </div>
           <div class="seperator">
-            <hr>
+            <hr />
             <button type="submit">
               <img src="assets/images/icon-arrow.svg" alt="icon-arrow" />
             </button>
